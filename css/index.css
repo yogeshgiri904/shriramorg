@@ -1,0 +1,780 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    scroll-behavior: smooth;
+    outline: none;
+    font-weight: 300;
+}
+html
+{
+    overflow-x: hidden;
+}
+
+
+/* heading */
+.main
+{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/pexels-josh-hild-4256852.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.heading
+{
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 20px;
+}
+.heading h1
+{
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+.heading .bold
+{
+    font-weight: bold;
+    color: cyan;
+    text-transform: uppercase;
+}
+.search-bar
+{
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    height: 40px;
+    background-color: white;
+}
+.search-bar input
+{
+    width: 80%;
+    height: 100%;
+    background-color: transparent;
+    color: black;
+    font-size: .8rem;
+    padding-left: 20px;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    border: none;
+}
+.search-bar button
+{
+    width: 150px;
+    height: 100%;
+    color: white;
+    background: linear-gradient(to left, #ff512f, #dd2476);
+    background-repeat: no-repeat;
+    background-position: 0px 0;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.search-bar button:hover 
+{
+    background-position: -200px 0;
+    color: #dd2476;
+}
+.search-bar button span
+{
+    font-weight: bold;
+}
+.search-bar .fa
+{
+    margin-right: 5px;
+}
+.explore-btn a
+{
+    display: inline-block;
+    margin-top: 30px;
+    background: linear-gradient(to left, #ff512f, #dd2476);
+    background-repeat: no-repeat;
+    background-position: 0px 0;
+    color: white;
+    text-decoration: none;
+    border-radius: 100px;
+    padding: 10px 40px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+    background-color: white;
+}
+.explore-btn a:hover
+{
+    background-position: 200px 0;
+    color: #dd2476;
+}
+.top-up
+{
+    z-index: 10;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    background-color: crimson ;
+    box-shadow: 0px 5px 10px 0px rgba(65, 38, 38, 0.6);
+    padding-bottom: 2px;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.top-up:hover
+{
+    transform: translateY(-10px);
+}
+@media(max-width: 720px)
+{
+    .heading h1
+    {
+        text-align: center;
+        font-size: 2.2rem;
+    }
+    .search-bar
+    {
+        width: 90%;
+        height: 40px;
+    }
+    .search-bar input
+    {
+        width: 80%;
+        height: 100%;
+        font-size: .65rem;
+        padding-left: 10px;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+    }
+    .search-bar button
+    {
+        font-size: 1.1rem;
+        width: 15%;
+        text-align: center;
+    }
+    .search-bar .fa
+    {
+        margin-right: 0px;
+    }
+    .search-bar button span
+    {
+        display: none;
+    }
+}
+
+
+
+/* Top Upcoming */
+
+
+.section
+{
+    width: 100vw;
+    height: fit-content;
+    display: inline-flex;
+    padding: 50px 0px;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/Abstract.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50%;
+    overflow-x: hidden;
+}
+.section-h
+{
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 5px 5px 5px grey;
+}
+.section-p
+{
+    text-align: center;
+    font-size: 1rem;
+    padding: 5px;
+}
+.section:nth-child(odd)
+{
+    background-image: url(../img/Abstract-2.png);
+    background-position: left;
+}
+.section:nth-child(5)
+{
+    background-image: url(../img/bg-3.jpg);
+    background-size: cover;
+    background-position: right;
+    margin: 50px 0px 50px 0px;
+}
+
+
+
+/* our services section begins */
+
+.service-flex
+{
+    margin-top: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.service
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 10px;
+    flex: 1 1 300px;
+    height: 300px;
+    background: #e0f2ff;
+    transition: 0.5s ease;
+    margin: 10px;
+}
+.service:hover
+{
+    background: #fff;
+    box-shadow: 0px 10px 30px 0px rgba(0, 0, 0, 0.200);
+}
+.service img
+{
+    width: 100px;
+    height: 100px;
+}
+.service p
+{
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+
+
+
+.main-flex
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 80vw;
+    height: auto;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.500);
+}
+.poster
+{
+    height: 400px;
+    overflow: hidden;
+    flex: 1 1 350px;
+}
+.poster img
+{
+    height: 100%;
+    transition: all ease .5s;
+}
+.poster img:hover
+{
+    transform: scale(1.1);
+}
+.text-box
+{
+    flex: 1 1 350px;
+    display: inline-flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 8%;
+}
+.text-box span
+{
+    color: crimson;
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+.text-box h2
+{
+    font-weight: bold;
+    text-align: center;
+}
+.about-text
+{
+    font-size: 0.8rem;
+}
+.stars
+{
+    width: 150px;
+    height: 32px;
+}
+.pre-register
+{
+    margin-top: 20px;
+    width: 120px;
+    height: 40px;
+    background-color: crimson;
+    color: white;
+    border: 2px solid crimson;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.600);
+    transition: all 0.3s ease;
+}
+.pre-register:hover
+{
+    background-color: transparent;
+    color: crimson;
+}
+@media(max-width: 720px)
+{
+    .section-h
+    {
+        font-size: 1.7rem;
+    }
+    .section-p
+    {
+        font-size: .8rem;
+    }
+    .main-flex
+    {
+        width: 92%;
+    }
+    .text-box h2
+    {
+        font-size: 1.2rem;
+    }
+    .text-box p
+    {
+        font-size: .8rem;
+    }
+    .poster
+    {
+        height: auto;
+    }
+    .poster img
+    {
+        width: 100%;
+    }
+}
+
+/*latest Launches*/
+
+.card-grid
+{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.card, .ex-card
+{
+    position: relative;
+    width: 300px;
+    height: 420px;
+    margin: 20px;
+    border-radius: 10px;
+    display: inline-flex;
+    flex-flow: column;
+    background-color: transparent;
+    transform: translatex(0px);
+}
+.card:first-child, .ex-card:first-child
+{
+    margin-left: 30px;
+}
+.card-grid::-webkit-scrollbar
+{
+    display: none;
+}
+.card-img
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    background-color: rgb(25, 25, 25);
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.600);
+}
+.card-img img
+{
+    width: 100px;
+    height: 100px;
+}
+.like
+{
+    position: absolute;
+    top: 4%;
+    right: 6%;
+    background-color: transparent;
+    color: white;
+    background-color: crimson;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 10px 10px 10px black;
+}
+.card-text
+{
+    text-align: center;
+    padding: 20px 10px;
+}
+.fa-check-circle-o,.fa-check-circle
+{
+    margin-left: 5px;
+    color: rgb(0, 255, 0);
+}
+.card-text h2, .ex-card-text h2
+{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.card-text p, .ex-card-text p
+{
+    font-size: .8rem;
+}
+.card-text .off
+{
+    margin-right: 10px;
+    text-decoration: line-through;
+    color: darkslategray;
+}
+.card-btn a
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    border: 2px solid dodgerblue;
+    border-radius: 4px;
+    background-color: white;
+    color: dodgerblue;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition:  0.3s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.500);
+    text-decoration: none;
+}
+.card-btn a:hover
+{
+    color: white;
+    background-color: dodgerblue;
+}
+.card-btn a:first-child
+{
+    width: 200px;
+    color: white;
+    font-weight: bold;
+    background-color: dodgerblue;
+}
+.card-btn a:first-child:hover
+{
+    background-color: transparent;
+    color: dodgerblue;
+}
+.star
+{
+    color: crimson;
+}
+
+/* expert section starts here */
+
+.ex-card
+{
+    position: relative;
+    width: 260px;
+    height: 380px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.600);
+    border-radius: 0px;
+}
+.ex-card-img img
+{
+    width: 260px;
+    height: 260px;
+}
+.card-social
+{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 50px;
+}
+.card-social a
+{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    color: white;
+    background-color: dodgerblue;
+    border: 2px solid dodgerblue;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.card-social a:hover
+{
+    transform: translateY(-5px);
+}
+.ex-card-text
+{
+    text-align: center;
+    padding: 2px 10px;
+}
+
+
+/* testimonials starts here */
+
+.main-contain
+{
+    width: 90%;
+    margin: auto;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+.container
+{
+    position: relative;
+    height: auto;
+    overflow: hidden;
+}
+.slider
+{
+    height: 100%;
+    width: 500%;
+    display: inline-flex;
+    transition: 0.5s;
+    animation: tslide 15s ease infinite;
+    animation-delay: 1s;
+}
+@keyframes tslide
+{
+    0%,100%
+    {
+        transform: translate(0);
+    }
+    20%
+    {
+        transform: translate(-20%);
+    }
+    40%
+    {
+        transform: translate(-40%);
+    }
+    60%
+    {
+        transform: translate(-60%);
+    }
+    80%
+    {
+        transform: translate(-80%);
+    }
+
+}
+.slides
+{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    flex-flow: column;
+    align-items: center;
+}
+.slider_btn
+{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+#prev
+{
+    position: absolute;
+    left: 2%;
+    top: 50%;
+}
+#next
+{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+}
+.slides img
+{
+    width: 200px;
+    border-radius: 50%;
+}
+.slider-text
+{
+    width: 60%;
+    text-align: center;
+    font-size: 15px;
+}
+.slider-text span
+{
+    font-weight: bold;
+    color: crimson;
+}
+
+
+/* pricing section starts here */
+
+.pricing-box
+{
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.pricing-card
+{
+    position: relative;
+    width: 280px;
+    height: 400px ;
+    margin: 20px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.600);
+    transition: 0.5s;
+    background-color: white;
+}
+.pricing-card:hover
+{
+    transform: scale(1.05);
+}
+.pricing-logo
+{
+    width: 100%;
+    height: 100px;
+    background: dodgerblue;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.pricing-logo .fa
+{
+    font-size: 1.8rem;
+}
+.pricing-logo h2
+{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.pricing-card p
+{
+    font-size: 1.2rem;
+    color: dodgerblue;
+}
+.pricing-card p span
+{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.pricing-card ul
+{
+    list-style-type: none;
+}
+.pricing-card .fa
+{
+    margin-right: 5px;
+}
+.pricing-card .fa-times
+{
+    color: red;
+}
+.pricing-card .fa-check
+{
+    color: #25D366;
+}
+.pricing-card a
+{
+    width: 120px;
+    height: 38px;
+    color: black;
+    background-color: dodgerblue;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    font-size: .8rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.ribbin
+{
+    position: absolute;
+    right: 0px;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+.ribbin span
+{
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    background-color: yellow;
+    color: black;
+    position: relative;
+    top: 10px;
+    right: 0px;
+    display: inline-block;
+    transform: rotate(45deg);
+    text-align: center;
+    font-size: .65rem;
+    text-transform: uppercase;
+}
+.pricing-card:nth-child(2) .pricing-logo, .pricing-card:nth-child(2) a
+{
+    background: orange;
+}
+.pricing-card:nth-child(2) p
+{
+    color: orange;
+}
+.pricing-card:nth-child(3) .pricing-logo, .pricing-card:nth-child(3) a
+{
+    background: crimson;
+}
+.pricing-card:nth-child(3) p
+{
+    color: crimson;
+}
+
+.pricing-card a:hover
+{
+    border: 2px solid black;
+    background-color: transparent;
+}
+

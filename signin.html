@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<head>
+    <title>Sign Up | Shri Ram Org</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/signin.css">
+    <script src="js/header.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="site-body">
+    
+        <nav>
+             <div class="main">
+                 <div class="header">
+                     <button onclick="openBar()" id="open-btn" class="mob-btn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+                     <button onclick="closeBar()" id="close-btn" class="mob-btn"><i class="fa fa-times" aria-hidden="true"></i></button>
+                     <img src="img/logo.png" alt="Official logo">
+                     <div class="nav" id="nav">
+                         <ul>
+                             <li><a href="index.html">Home</a></li>
+                             <li><a href="aboutus.html">About</a></li>
+                             <li><a href="courses.html">Courses</a></li>
+                             <li><a href="downloads.html">Download &nbsp; <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                 <div class="submenu-1">
+                                     <ul>
+                                         <li><a href="#">Mobile</a></li>
+                                         <li><a href="#">IOS</a></li>
+                                         <li><a href="#">Windows</a></li>
+                                     </ul>
+                                 </div>
+                             </li>
+                             <li><a href="#prices">Pricing &nbsp;<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                 <div class="submenu-1">
+                                     <ul>
+                                         <li><a href="#">Basic</a></li>
+                                         <li><a href="#">Advanced</a></li>
+                                         <li><a href="#">Premium</a></li>
+                                     </ul>
+                                 </div>
+                             </li>
+                             <li><a href="contactus.html">Contact</a></li>
+                         </ul>
+                     </div>
+                     <div class="login-btn">
+                         <a href="signin.html">Signup</a>
+                     </div>
+                 </div>
+                 <div class="heading">
+                     <h1>Sign Up</h1>
+                     <div class="navigate-link"><span><a href="index.html">Home</a> | <a href="#">Sign Up</a></span></div>
+                 </div>
+                 <a href="#" class="top-up"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+             </div>
+         </nav>
+    
+    <div class="section">
+    <div class="container">
+        <div class="main_box">
+            <div class="main_content_1">
+                <img src="https://www.flaticon.com/svg/static/icons/svg/265/265674.svg" class="avt">
+                <h2>Already have an account? </h2>
+                <p>Sign In to your existing account at </br> Shri Ram Organization. </p>
+                <button id="change">Sign In</button>
+            </div>
+            <div class="main_content_2">
+                <img src="https://www.flaticon.com/svg/static/icons/svg/265/265667.svg" class="avt">
+                <h2>Don't have an account?</h2>
+                <p>Hey! Are you new here? </br>Create an account now for free.</p>
+                <button id="unchange">Sign Up</button>
+            </div>
+        </div>
+        <div class="input_box">
+            <div class="input_content_1">
+                <h1>WELCOME, SIGN UP</h1>
+                <p>Hey! Are you new here? </br>Create an account now for free.</p>
+                <form class="form" id="form">
+                    <div class="form-control" id="namefc">
+                        <input type="text" id="name" placeholder="Enter Username" autocomplete="off">
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                        <span id="nametext">Error Msg.</span>
+                    </div>
+                    <div class="form-control" id="emailfc">
+                        <input type="email" id="email" placeholder="Enter Email">
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                        <span id="emailtext">Error Msg.</span>
+                    </div>
+                    <div class="form-control" id="phonefc">
+                        <input type="number" id="phone" placeholder="Mobile Number">
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                        <span id="phonetext">Error Msg.</span>
+                    </div>
+                    <div class="form-control" id="passfc">
+                        <input type="password" id="pass" placeholder="Enter Password" autocomplete="off">
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                        <span id="passtext">Error Msg.</span>
+                    </div>
+                    <div class="form-control" id="cpassfc">
+                        <input type="password" id="cpass" placeholder="Confirm Password" autocomplete="off">
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                        <span id="cpasstext">Error Msg.</span>
+                    </div>
+                    <span><input type="checkbox" value="check" required> &nbsp; I accept all the <a href="#">Terms & Conditions</a>.</span>
+                    <input type="submit" value="Sign Up">
+                </form>
+            </div>
+
+            <div class="input_content_2">
+                <h1>WELCOME BACK, SIGN IN</h1>
+                <p>Sign In to your existing account at </br> Shri Ram Organization. </p>
+                <form class="form" id="form_2">
+                    <div class="form-control" id="namefc">
+                        <input type="text" id="name" placeholder="Enter Username" autocomplete="off">
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                        <span id="nametext">Error Msg.</span>
+                    </div>
+                    <div class="form-control" id="passfc">
+                        <input type="password" id="pass" placeholder="Enter Password" autocomplete="off">
+                        <i class="fa fa-check-circle" aria-hidden="true"></i>
+                        <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                        <span id="passtext">Error Msg.</span>
+                    </div>
+                    <span><input type="checkbox" value="check" required> &nbsp; Remember me on this device.</span>
+                    <input type="submit" value="Sign In">
+                    <a href="#">Forgot Password ?</a>
+                </form>
+                
+                <div class="social_box">
+                    <p>OR Sign In With</p>
+                        <div class="social">
+                            <a href="https://accounts.google.com/ServiceLogin"><i class="fa fa-google" aria-hidden="true"></i></a>
+                            <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="https://www.twitter.com/login"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="https://www.linkedin.com/login"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+       
+<!-- footer starts here -->
+
+    <div class="footer">
+        <div class="footer-item">
+            <div class="footer-child" id="about">
+                <div class="footer-logo">
+                <a href="Aboutus.html"><img src="img/logo.png" alt="Shri Ram Org."></a> 
+                </div>
+                <p> We are the perfect online learning platform having above 1 lakh courses,
+                    Take courses in anything from programming languages to personality Development.
+                    We have both free and paid courses within your budget.</p>
+                <span>
+                    Know more about <a href="aboutus.html"> Shri Ram Organiation<i class="fa fa-external-link" aria-hidden="true"></i></a>
+                </span> 
+            </div>
+            <div class="footer-child" id="address">
+                <h3>Address</h3> 
+                <ul class="ul">
+                    <li><i class="fa fa-map-marker" aria-hidden="true"></i> Agra, Uttar Pradesh</li>
+                    <li><i class="fa fa-phone" aria-hidden="true"></i> +91 9690484308</li>
+                    <li><i class="fa fa-envelope" aria-hidden="true"></i> Mail2sro@gmail.com</li>
+                </ul>   
+            </div>    
+            <div class="footer-child" id="contact">
+                <h3>Stay Connected</h3>
+                <form> 
+                    <input type="email"  placeholder="Enter Your Email">
+                    <input type="submit" value="Subscribe">
+                </form>
+                <div class="social">
+                    <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="https://www.twitter.com/login"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://accounts.google.com/ServiceLogin"><i class="fa fa-google" aria-hidden="true"></i></a>
+                    <a href="https://www.instagram.com/accounts/login"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/login"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> &copy; Copyright 2020 Shri Ram Org. | All Rights Reserved </p>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
+<script src="js/validation.js"></script>

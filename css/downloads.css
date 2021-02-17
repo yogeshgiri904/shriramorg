@@ -1,0 +1,34 @@
+.download-box
+{
+    width: 100vw;
+    height: 100vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    text-align: center;
+}
+.download-box h1
+{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: dodgerblue;
+    text-transform: uppercase;
+}
+.download-box p
+{
+    margin-top: 20px;
+    text-align: center;
+
+}
+.download-box a
+{
+    text-decoration: underline;
+    color: aqua;
+    font-weight: bold;
+}
+.img
+{
+    margin-top: 20px;
+    width: 50%;
+}

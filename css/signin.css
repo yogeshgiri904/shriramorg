@@ -1,0 +1,268 @@
+.section
+{
+    width: 100vw;
+    height: 100vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.container
+{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 620px;
+    width: 75%;
+    background: linear-gradient(to right, purple , cyan);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.main_box, .input_box
+{
+    height: 100%;
+    flex: 1 1 300px;
+    background-color: transparent;
+    color: white; 
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform ease-in-out 1s;
+}
+.input_box
+{
+    background-color: white;
+    color: black; 
+}
+
+/* main_box starts here */
+
+.avt
+{
+    width: 120px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+.main_box button, input[type="submit"]
+{
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: crimson;
+    background-color: transparent;
+    border: 2px solid crimson;
+    font-weight: bold;
+    margin: 10px 0px;
+}
+.main_content_2
+{
+    display: none;
+}
+
+
+/* input_box starts here */
+
+
+.input_content_2, .input_content_1
+{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1% 8%;
+}
+.input_content_2
+{
+    display: none;
+}
+.form
+{
+    margin-top: 10px;
+    width: 80%;
+    height: fit-content;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container h1
+{
+    font-size: 2rem;
+    color: dodgerblue;
+    font-weight: bold;
+}
+.container p
+{
+    font-size: .9rem;
+}
+.form-control
+{
+    width: 100%;
+    position: relative;
+    margin-bottom: 2px;
+    text-align: left;
+}
+.form-control input
+{
+    width: 100%;
+    height: 40px;
+    border-radius: 3px;
+    border: 2px solid lightgrey;
+    padding: 10px;
+}
+.form-control input:focus
+{
+    border-color: grey;
+}
+.form-control.success input
+{
+    border-color: #2ecc71;
+}
+.form-control.error input
+{
+    border-color: #e74c3c;
+}
+.form-control i
+{
+    position: absolute;
+    right: -25px;
+    top: 20%;
+    visibility: hidden;
+}
+.form-control.success .fa-check-circle 
+{
+    color: #2ecc71;
+    visibility: visible;
+}
+.form-control.error .fa-exclamation-circle 
+{
+    color: #e74c3c;
+    visibility: visible;
+}
+.form-control span
+{
+    margin-left: 5px;
+    visibility: hidden;
+}
+.form-control.success span
+{
+    color: #2ecc71;
+    visibility: visible;
+}
+.form-control.error span
+{
+    color: #e74c3c;
+    visibility: visible;
+}
+.form input[type="number"]::-webkit-inner-spin-button
+{
+    appearance: none;
+}
+.form input[type="submit"]
+{
+    border-radius: 20px;
+    background-color: crimson;
+    color: white;
+}
+.form span
+{
+    font-size: 0.8rem;
+}
+.form a
+{
+    text-decoration: none;
+    color: red;
+    font-size: .8rem;
+}
+.form a:hover
+{
+    text-decoration: underline;
+}
+.social_box
+{
+    margin-top: 50px;
+    text-align: center;
+}
+.social
+{
+    display: inline-flex;
+    text-align: center;
+}
+.social a
+{  
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: white;
+    transition: 0.5s;
+    margin-left: 10px;
+}
+.social a:nth-child(1)
+{
+    margin-left: 0px;
+    background-color:brown;
+}
+.social a:nth-child(1):hover
+{
+    background-color: white;
+    color:brown;
+}
+.social a:nth-child(2)
+{
+    background-color:#3B5998;
+}
+.social a:nth-child(2):hover
+{
+    background-color: white;
+    color:#3B5998;
+}
+.social a:nth-child(3)
+{
+    background-color: #00ACEE;
+}
+.social a:nth-child(3):hover
+{
+    background-color: white;
+    color:#00ACEE;
+}
+.social a:nth-child(4)
+{
+    background-color:#0E76A8;
+}
+.social a:nth-child(4):hover
+{
+    background-color: white;
+    color:#0E76A8;
+}
+
+@media(max-width:720px)
+{
+    .container
+    {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    .form
+    {
+        width: 100%;
+    }
+    .container h1
+    {
+        font-size: 1.6rem;
+    }
+}
